@@ -1,57 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+
     <title>Register page</title>
 </head>
+
 <body>
     <header>Register</header>
     <main>
-        <h2> student Registration</h2>
-        <form>
-            <label>Full name</label>
-            <input type="text" placeholder="Enter your name"><br><br>
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email"><br><br>
-            <label>Date of Birth</label>
-            <input type="date" placeholder="Enter your date of birth"><br><br>
-            <label>Phone Number</label>
-            <input type="text" placeholder="Enter your phone number"><br><br>
-            <label>Gender</label>
-            <select>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select><br><br>
+        <h2>Student Registration </h2>
+        <form id="registerForm">
+            <label>Full Name</label><br>
+            <input type="text" placeholder="Enter Your Name" id="name"><br>
+            <label>Email</label><br>
+            <input type="email" placeholder="Enter your email" id="email"><br>
+            <label>Password</label><br>
+            <input type="password" placeholder="Enter Your Password" id="password"><br>
+            <label>Date of Birth</label><br>
+            <input type="date" placeholder="DOB" id="dob"><br>
+            <label>Gender</label><br>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label> <br><br>
             <label>Select Course</label>
-            <select>
-                <option value="Python">Course 1</option>
-                <option value="JavaScript">Course 2</option>
-                <option value="Java">Course 3</option>
-            </select><br><br>
-            <label>Password</label>
-            <input type="password" placeholder="Enter your password"><br><br>
-            <label>Confirm Password</label>
-            <input type="password" placeholder="Confirm your password"><br><br>
-            <button type="submit">Register</button>
-
-
+            <br>
+            <select id="course">
+                <option>Python FullStack</option>
+                <option>Java FullStack</option>
+            </select>
+            <br>
+            <button type="submit" value="Register">Register</button>
         </form>
     </main>
-    <header>
-        Home<br>
-        <h1>Register NRRIT Learning Management</h1>
-        <p>Learn Practice Get Placed</p>
-        <nav>
-            <a href ="index.html">Home</a>
-            <a href ="course.html">About</a>
-            <a href ="trainers.html">Trainers</a>
-            <a href ="register.html">Register</a>
-            <a href ="login.html">Login</a>
-            <a href ="contact.html">Contact</a>
-
-        </nav>
-    </header>
-    
+    <script src="js/script.js"></script>
 </body>
+
 </html>
